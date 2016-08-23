@@ -11,12 +11,14 @@
   "main": "app.js",
   "scripts": {
     "start": "node loader.js",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- ./tests -t 10000"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- ./tests -t 10000",
+    "test:unit": "mocha tests/unit --recursive"
   },
   "dependencies": {
     "async": "~1.5.0",
     "autoprefixer": "^6.2.3",
     "bcryptjs": "~2.3.0",
+    "bluebird": "^3.4.1",
     "body-parser": "^1.9.0",
     "chart.js": "^2.1.0",
     "colors": "^1.1.0",
@@ -33,6 +35,7 @@
     "express": "^4.14.0",
     "express-session": "^1.8.2",
     "express-useragent": "0.2.4",
+    "fn-unary": "^1.0.0",
     "html-to-text": "2.0.0",
     "ip": "1.1.2",
     "jimp": "0.2.21",
